@@ -9,6 +9,7 @@ import { AdminPerfilesComponent } from './componentes/admin/admin-perfiles/admin
 import { AdminTurnosComponent } from './componentes/admin/admin-turnos/admin-turnos.component';
 import { DashboardComponent } from './componentes/admin/dashboard/dashboard.component';
 import { LoginComponent } from './componentes/admin/login/login.component';
+import { FooterComponent } from './componentes/comunes/footer/footer.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'catalogo', pathMatch: 'full'},
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'admin-alquileres',component: AdminAlquileresComponent},
   {path: 'login',component: LoginComponent},
   {path: 'admin-caja',component: AdminCajaComponent},
+  {path: 'footer',component: FooterComponent},
   {path: 'admin-catalogo',component: AdminCatalogoComponent},
   {path: 'admin-perfiles',component: AdminPerfilesComponent},
   {path: 'admin-turnos',component: AdminTurnosComponent},
