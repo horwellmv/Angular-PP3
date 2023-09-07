@@ -8,12 +8,14 @@ import { AdminCatalogoComponent } from './componentes/admin/admin-catalogo/admin
 import { AdminPerfilesComponent } from './componentes/admin/admin-perfiles/admin-perfiles.component';
 import { AdminTurnosComponent } from './componentes/admin/admin-turnos/admin-turnos.component';
 import { DashboardComponent } from './componentes/admin/dashboard/dashboard.component';
+import { LoginComponent } from './componentes/admin/login/login.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'catalogo', pathMatch: 'full'},
   {path: 'catalogo',component: CatalogoComponent},
   {path: 'agendar-turno',component: AgendarTurnoComponent},
   {path: 'admin-alquileres',component: AdminAlquileresComponent},
+  {path: 'login',component: LoginComponent},
   {path: 'admin-caja',component: AdminCajaComponent},
   {path: 'admin-catalogo',component: AdminCatalogoComponent},
   {path: 'admin-perfiles',component: AdminPerfilesComponent},
