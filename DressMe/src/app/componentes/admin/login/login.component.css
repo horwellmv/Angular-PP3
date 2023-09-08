@@ -1,3 +1,55 @@
-form {
-    margin: 20px;
-}
+.login-container {
+    background-image: url('/assets/background.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .project-name {
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: 20px; /* Espacio entre el nombre del proyecto y el formulario */
+    color: #efefef;
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  
+  .login-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 30%; /* Ajusta el ancho del formulario según tus necesidades */
+    position: relative; /* Agregar posición relativa para el botón de cierre */
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: red;
+  }
+  
+  .close-button span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
