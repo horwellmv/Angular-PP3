@@ -14,6 +14,7 @@ import { AdminPerfilesComponent } from './componentes/admin/admin-perfiles/admin
 import { AdminAlquileresComponent } from './componentes/admin/admin-alquileres/admin-alquileres.component';
 import { NavbarComponent } from './componentes/comunes/navbar/navbar.component';
 import { FooterComponent } from './componentes/comunes/footer/footer.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FooterComponent } from './componentes/comunes/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
