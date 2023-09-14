@@ -16,6 +16,7 @@ import { NavbarComponent } from './componentes/comunes/navbar/navbar.component';
 import { FooterComponent } from './componentes/comunes/footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './componentes/comunes/header/header.component';
+import { DetalleModalComponent } from './componentes/usuario/detalle-modal/detalle-modal.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { HeaderComponent } from './componentes/comunes/header/header.component';
     AdminAlquileresComponent,
     NavbarComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    DetalleModalComponent
   ],
   imports: [
     BrowserModule,

@@ -10,10 +10,14 @@ import { AdminTurnosComponent } from './componentes/admin/admin-turnos/admin-tur
 import { DashboardComponent } from './componentes/admin/dashboard/dashboard.component';
 import { LoginComponent } from './componentes/admin/login/login.component';
 import { FooterComponent } from './componentes/comunes/footer/footer.component';
+import { HeaderComponent } from './componentes/comunes/header/header.component';
+import { DetalleModalComponent } from './componentes/usuario/detalle-modal/detalle-modal.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'catalogo', pathMatch: 'full'},
   {path: 'catalogo',component: CatalogoComponent},
+  {path: 'header',component: HeaderComponent},
+  {path: 'detalle',component: DetalleModalComponent},
   {path: 'agendar-turno',component: AgendarTurnoComponent},
   {path: 'admin-alquileres',component: AdminAlquileresComponent},
   {path: 'login',component: LoginComponent},
