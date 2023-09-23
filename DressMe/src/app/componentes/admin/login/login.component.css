@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     min-height: 100vh;
     padding: 20px;
   }
@@ -13,7 +13,7 @@
   .project-name {
     text-align: left;
     margin-top: auto;
-    margin-bottom: 20px; /* Espacio entre el nombre del proyecto y el formulario */
+    margin-bottom: 60px; /* Espacio entre el nombre del proyecto y el formulario */
     color: #efefef;
   }
   
@@ -51,7 +51,7 @@
     border-bottom: 1px solid #585555;
     padding: 2px;
     margin: 5px 0;
-    width: 100%;
+    width: 200%;
     outline: none;
   }
   .btn-close span {
