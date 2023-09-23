@@ -12,10 +12,11 @@ import { LoginComponent } from './componentes/admin/login/login.component';
 import { FooterComponent } from './componentes/comunes/footer/footer.component';
 import { HeaderComponent } from './componentes/comunes/header/header.component';
 import { DetalleModalComponent } from './componentes/usuario/detalle-modal/detalle-modal.component';
+import { LandinPageComponent } from './componentes/usuario/landin-page/landin-page.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'catalogo', pathMatch: 'full'},
-  {path: 'catalogo',component: CatalogoComponent},
+  {path: 'catalogo',component: LandinPageComponent},
   {path: 'header',component: HeaderComponent},
   {path: 'detalle',component: DetalleModalComponent},
   {path: 'agendar-turno',component: AgendarTurnoComponent},
