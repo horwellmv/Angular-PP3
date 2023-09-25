@@ -18,6 +18,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './componentes/comunes/header/header.component';
 import { DetalleModalComponent } from './componentes/usuario/detalle-modal/detalle-modal.component';
 import { LandinPageComponent } from './componentes/usuario/landin-page/landin-page.component';
+import { AdminContabilidadComponent } from './componentes/admin/admin-contabilidad/admin-contabilidad.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { LandinPageComponent } from './componentes/usuario/landin-page/landin-pa
     FooterComponent,
     HeaderComponent,
     DetalleModalComponent,
-    LandinPageComponent
+    LandinPageComponent,
+    AdminContabilidadComponent
   ],
   imports: [
     BrowserModule,
