@@ -13,21 +13,26 @@ import { FooterComponent } from './componentes/comunes/footer/footer.component';
 import { HeaderComponent } from './componentes/comunes/header/header.component';
 import { DetalleModalComponent } from './componentes/usuario/detalle-modal/detalle-modal.component';
 import { LandinPageComponent } from './componentes/usuario/landin-page/landin-page.component';
+import { AdminContabilidadComponent } from './componentes/admin/admin-contabilidad/admin-contabilidad.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'catalogo', pathMatch: 'full'},
-  {path: 'catalogo',component: LandinPageComponent},
+
   {path: 'header',component: HeaderComponent},
+  {path: 'footer',component: FooterComponent},
+  {path: 'catalogo',component: LandinPageComponent},
   {path: 'detalle',component: DetalleModalComponent},
   {path: 'agendar-turno',component: AgendarTurnoComponent},
-  {path: 'admin-alquileres',component: AdminAlquileresComponent},
+
   {path: 'login',component: LoginComponent},
-  {path: 'admin-caja',component: AdminCajaComponent},
-  {path: 'footer',component: FooterComponent},
-  {path: 'admin-catalogo',component: AdminCatalogoComponent},
-  {path: 'admin-perfiles',component: AdminPerfilesComponent},
-  {path: 'admin-turnos',component: AdminTurnosComponent},
   {path: 'dashboard',component: DashboardComponent},
+  {path: 'admin-turnos',component: AdminTurnosComponent},
+  {path: 'admin-alquileres',component: AdminAlquileresComponent},
+  {path: 'admin-catalogo',component: AdminCatalogoComponent},
+  {path: 'admin-caja',component:AdminContabilidadComponent},
+  {path: 'admin-cobrar',component:AdminCajaComponent},
+  {path: 'admin-perfiles',component: AdminPerfilesComponent},
+  
   {path: '**',redirectTo: 'catalogo', pathMatch: 'full'}
 ];
 
