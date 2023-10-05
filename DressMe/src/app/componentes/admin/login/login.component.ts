@@ -15,8 +15,8 @@ export class LoginComponent {
   constructor(private fb:FormBuilder,private afAuth: AngularFireAuth,private router: Router){
     
     this.loginUsuario= this.fb.group({
-      email:['',Validators.required],
-      password:['',Validators.required]
+      email:['',[Validators.required, Validators.email]],
+      password:['',[Validators.required, Validators.minLength(6)]]
     })
   }
 
