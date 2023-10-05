@@ -1,13 +1,11 @@
-<div class="login-container">
+<div *ngIf="!autenticando" class="login-container">
 
     <div class="project-name">
         <h1>Dress Me</h1>
     </div>
 
     <div class="login-box">
-
         <h2>Iniciar Sesión</h2>
-
         <form (ngSubmit)="login()" [formGroup]="loginUsuario">
             <div class="mb-3">
               <label class="form-label">Email</label>
@@ -28,4 +26,4 @@
           </form>
     </div>
 </div>
-        
+<app-spinner *ngIf="autenticando"></app-spinner>

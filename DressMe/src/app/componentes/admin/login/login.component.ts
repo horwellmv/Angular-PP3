@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 
 export class LoginComponent {
   loginUsuario: FormGroup;
+  autenticando= false;
 
   constructor(private fb:FormBuilder,private afAuth: AngularFireAuth,private router: Router){
     
@@ -22,12 +23,14 @@ export class LoginComponent {
   login(){
     const email= this.loginUsuario.value.email;
     const password = this.loginUsuario.value.password;
+    this.autenticando=true;
     
     this.afAuth.signInWithEmailAndPassword(email,password).then((usuario)=>{
       this.router.navigate(['/dashboard']);
     }).catch((err)=>{
       console.log(err);
-      alert(err)
+      alert(err);
+      this.autenticando=false;
     })
   }
 
