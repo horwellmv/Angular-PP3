@@ -1,10 +1,38 @@
 import { Component } from '@angular/core';
-
+import { FormBuilder, FormGroup, Validator, Validators } from '@angular/forms';
+import { AngularFireAuth } from "@angular/fire/compat/auth";
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+
 export class LoginComponent {
+  loginUsuario: FormGroup;
+  autenticando= false;
+
+  constructor(private fb:FormBuilder,private afAuth: AngularFireAuth,private router: Router){
+    
+    this.loginUsuario= this.fb.group({
+      email:['',[Validators.required, Validators.email]],
+      password:['',[Validators.required, Validators.minLength(6)]]
+    })
+  }
+
+  login(){
+    const email= this.loginUsuario.value.email;
+    const password = this.loginUsuario.value.password;
+    this.autenticando=true;
+    
+    this.afAuth.signInWithEmailAndPassword(email,password).then((usuario)=>{
+      this.router.navigate(['/dashboard']);
+    }).catch((err)=>{
+      console.log(err);
+      alert(err);
+      this.autenticando=false;
+    })
+  }
 
 }
+

@@ -92,8 +92,18 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2,
+            "browserTarget": "DressMe:build:production"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "0b1e7657-c8e4-46bd-a801-b1043f841351"
   }
 }

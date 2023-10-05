@@ -1,0 +1,76 @@
+.login-container {
+    background: linear-gradient(rgba(131, 84, 84, 0.6),rgba(128, 65, 65, 0.6)),url('../../../../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .project-name {
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: 60px; /* Espacio entre el nombre del proyecto y el formulario */
+    color: #efefef;
+  }
+  
+  h1 {
+    font-size: 52px;
+    font-weight: bold;
+    margin-left: 50px;
+  }
+  
+  .login-box {
+    background-color: rgba(255, 255, 255, 0.649);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: start;
+    width: 30%;
+    position: relative; /* Agregar posición relativa para el botón de cierre */
+    display: flex;    
+    flex-direction: column;
+  }
+  
+  .btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: red;
+  }
+  
+  .form-control{
+    background-color: rgba(255, 255, 255, 0.649);
+    border:none;
+    border-radius: 0;
+    border-bottom: 1px solid #585555;
+    padding: 2px;
+    margin: 5px 0;
+    width: 100%;
+    outline: none;
+  }
+  .btn-close span {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+  }
+  
+  .btn-primary{
+    background-color: rgba(255, 255, 255, 0.973);
+    color: black;
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+  
