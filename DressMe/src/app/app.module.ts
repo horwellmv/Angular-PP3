@@ -31,6 +31,7 @@ import { HeaderComponent } from './componentes/comunes/header/header.component';
 import { DetalleModalComponent } from './componentes/usuario/detalle-modal/detalle-modal.component';
 import { LandinPageComponent } from './componentes/usuario/landin-page/landin-page.component';
 import { AdminContabilidadComponent } from './componentes/admin/admin-contabilidad/admin-contabilidad.component';
+import { SpinnerComponent } from './comunes/spinner/spinner.component';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { AdminContabilidadComponent } from './componentes/admin/admin-contabilid
     HeaderComponent,
     DetalleModalComponent,
     LandinPageComponent,
-    AdminContabilidadComponent
+    AdminContabilidadComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
