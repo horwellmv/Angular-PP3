@@ -11,11 +11,8 @@ export class NavbarComponent {
 
   logOut(){
     console.log("funciona logout");
-    //localStorage.setItem("GuardianToken","");
-    //this.afAuth.signOut();
-    //this.router.navigate(['/login']);
-    this.router.navigate(['/login']);
     this.auth.signOut();
+    this.router.navigate(['/login']);    
   }
 
 }
